@@ -7,8 +7,10 @@ import wfdb
 from sklearn.utils import resample
 from imblearn.over_sampling import RandomOverSampler
 from keras.callbacks import EarlyStopping
+import os
+dir = os.path.dirname(__file__)
+data_path = os.path.join(dir, 'mit-bih-arrhythmia-database-1.0.0','mit-bih-arrhythmia-database-1.0.0', '')
 
-data_path = 'C:/Users/Bogdan Ionut/Desktop/Silviu/mit-bih-arrhythmia-database-1.0.0/mit-bih-arrhythmia-database-1.0.0/'
 pts = ['100', '101', '102', '103', '104', '106', '107', '108', '109', '112', '113', '114', '115', '116',
        '117', '118', '119', '121', '122', '123', '124', '200', '201', '202', '203', '205', '207',  '209', '210',
        '212', '213', '214', '215', '217', '219', '220', '221', '222', '223', '228', '230', '231', '232', '233', '234']
